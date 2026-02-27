@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Department Management</title>
+    <link rel="stylesheet" href="department.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Department Management</h2>
+    <button onclick="location.href='index.html'">Back</button>
+</div>
+
+<div class="container">
+    <div class="form-box">
+        <h3>Add Department</h3>
+
+        <input type="text" id="name" placeholder="Department Name">
+        <input type="text" id="description" placeholder="Description">
+
+        <button onclick="addDepartment()">Save Department</button>
+    </div>
+</div>
+
+<div class="table-container">
+    <h3>Department List</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="departmentTable"></tbody>
+    </table>
+</div>
+
+<script src="department.js"></script>
+</body>
+</html>

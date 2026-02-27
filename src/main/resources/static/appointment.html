@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Management</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Appointment Management</h2>
+    <button onclick="location.href='index.html'">Back</button>
+</div>
+
+<div class="container">
+    <div class="form-box">
+        <h3>Book Appointment</h3>
+
+        <input type="number" id="patientId" placeholder="Patient ID">
+        <input type="number" id="doctorId" placeholder="Doctor ID">
+        <input type="date" id="date">
+        <input type="time" id="time">
+
+        <button onclick="bookAppointment()">Book Appointment</button>
+    </div>
+</div>
+
+<div class="table-container">
+    <h3>Appointment List</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Patient</th>
+                <th>Doctor</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="appointmentTable"></tbody>
+    </table>
+</div>
+
+<script src="appointment.js"></script>
+</body>
+</html>

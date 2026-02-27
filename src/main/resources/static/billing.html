@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing</title>
+</head>
+<body>
+
+<h2>Generate Bill</h2>
+
+<input type="number" id="patientId" placeholder="Patient ID"><br><br>
+<input type="number" id="consultationFee" placeholder="Consultation Fee"><br><br>
+<input type="number" id="medicineFee" placeholder="Medicine Fee"><br><br>
+<input type="number" id="roomCharge" placeholder="Room Charge"><br><br>
+
+<button onclick="generateBill()">Generate Bill</button>
+
+<hr>
+
+<h3>Billing List</h3>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Patient</th>
+            <th>Total</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="billTable"></tbody>
+</table>
+
+<script src="billing.js"></script>
+</body>
+</html>
